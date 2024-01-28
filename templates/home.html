@@ -1,0 +1,213 @@
+<html>
+<head>
+<title> APOTHEXIS</title>
+{% load static %}
+<style>
+   header{
+  background-image: url(static/image/1.jpg);
+  color:white;
+  }
+  .help-bg-img {
+      background: url(../static/image/ballon.jpg) 100% 0;
+      min-height: 540px;
+    padding:10px;
+      box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+      background-repeat: no-repeat;
+      background-size: cover
+  }
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body style="background-color: white;">
+    {% block content %}
+    <div class="scroll-container">
+    <header >
+    <img src="{% static 'image/apo.png' %}">
+        
+        <br>
+        <h1> APOTHEXIS Technologies</h1>
+        <article style="margin:10px; margin-right: 100px;">
+          <h3> what service do you need?</h3>
+          <form action="" method="POST" autocomplete="off">
+            {% csrf_token %}
+  <input type="text" id="name" name="name" placeholder="FULL NAME*" required><br>
+  <input type="text" id="phone" name="phone" placeholder="MOBILE NUMBER*"  required><br>
+  <input type="email" id="email" name="email" placeholder="COMPANY EMAIL*" required><br>
+
+  <select id="service" name="service" placeholder="REQUEST FOR SERVICES?*" required>
+    <option value="select">REQUEST FOR SERVICES? </option>
+    <option value="web design">Web Design</option>
+  <option value="Asset Managing">Asset Managing</option>
+  <option value="Web & Mobile Application Development">Web & Mobile Application Development</option>
+  <option value="digital marketing">Digital Marketing</option>
+</select><br>
+<input type="submit"  style="background-color: lightgreen;" value="Register" >
+</form>
+          </article>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </header>
+        <h1 style="text-align: center; color:darkmagenta"><b></b> OUR VISIONS </h1>
+        <pre style="text-align: center;font-size: medium;  color:green">We enable SMEs in making the best use of emerging digital technologies to
+           build stronger capabilities & seize growth opportunities in today’s 
+           ever-evolving digital economy.</pre>
+           <div class="center">
+           <a href="#c4"><button>Let's Talk</button></a>
+           </div>
+<div class="container">   
+        <h1 style="text-align: center; color:darkmagenta"><b></b> OUR SERVICES </h1>
+        <div class="our-services">
+					  <div class="col-md-12 services-row">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="service-block">
+										<a href="javascript:void(0);" title="Website Design">
+										  <img class="service-image" alt="Website Design" src="static/image/web.jpg">
+										  <div class="service-details fadeIn-bottom">
+											<h4 class="service-title">Website Design</h4>
+										  </div>
+										</a>
+									</div>
+								</div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="service-block">
+										<a href="javascript:void(0);" title="Web & Mobile Application Development ">
+										  <img class="service-image" alt="Website Design" src="static/image/app.jpg">
+										  <div class="service-details fadeIn-bottom">
+											<h4 class="service-title">Web & Mobile Application Development</h4>
+										  </div>
+										</a>
+									</div>
+								</div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="service-block">
+										<a href="javascript:void(0);" title="Digital Marketing">
+										  <img class="service-image" alt="Website Design" src="static/image/digital.jpg">
+										  <div class="service-details fadeIn-bottom">
+											<h4 class="service-title">Digital Marketing</h4>
+										  </div>
+										</a>
+									</div>
+								</div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+									<div class="service-block">
+										<a href="javascript:void(0);" title="Asset Managing">
+										  <img class="service-image" alt="Website Design" src="static/image/asset.jpg">
+										  <div class="service-details fadeIn-bottom">
+											<h4 class="service-title">Asset Managing</h4>
+										  </div>
+										</a>
+									</div>
+								</div></div></div></div></div>
+                <div class="center">
+<a href="#c4"><button>CONTACT US</button></a>
+</div>
+<div class="container">   
+        <h1 style="text-align: center; color:darkmagenta"><b></b> OUR TECH STACKS </h1>
+        <pre style="text-align: center;font-size: medium;">We focus on emerging technologies for building high performing web & 
+          mobile products that can be securely deployed in the cloud</pre>
+        <div class="our-services">
+					  <div class="col-md-12 services-row">
+							<div class="ro">
+								<div class="col-lg-3 col-md-6 col-sm-6">
+										<a href="javascript:void(0);" title="PYTHON">
+										  <img class="service-image" style="height:85; width:137; " alt="Website Design" src="static/image/python.jpg">
+										  <div class="service-details"></div>
+                    </a>
+									</div>
+								
+                
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                      <a href="javascript:void(0);" title="JAVA">
+                        <img class="service-image" style="height:85; width:137; padding:10px; " alt="Website Design" src="static/image/java.jpg">
+                        <div class="service-details"></div>
+                      </a>
+                    </div>
+                  
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <a href="javascript:void(0);" title="NODE JS">
+                          <img class="service-image" style="height:85; width:137; " alt="Website Design" src="static/image/nodejs.jpg">
+                          <div class="service-details"></div>
+                        </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <a href="javascript:void(0);" title="PHP">
+                            <img class="service-image" style="height:85; width:137;  " alt="Website Design" src="static/image/php.jpg">
+                            <div class="service-details"></div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <a href="javascript:void(0);" title="React">
+                            <img class="service-image" style="height:85; width:137; " alt="Website Design" src="static/image/react.jpg">
+                            <div class="service-details"></div>
+                          </a>
+                        </div>
+                      </div></div></div>
+                      
+ </div>
+ <div id="help" class="help-you">
+  <div class="col-md-6 help-bg-img d-none d-lg-block d-md-block"></div>
+  <div class="col-md-6 help-info">
+    <div class="row">
+      <div class="col-md-8 col-sm-10 help-content">
+        <br><br><br><br>
+        <h3>Let us take the technical weight off your shoulders</h3>
+        <br><br><br>
+        <a href="#c4"><button>Book A Call</button></a>
+        <script>
+          
+        </script>
+        <br><br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<section style="float:right">
+<article id="c4" style="margin:20px; margin-right: 100px;;"> 
+  <h3> what service do you need?</h3>
+  <form action="" method="POST" autocomplete="off">
+    {% csrf_token %}
+<input type="text" id="name" name="name" placeholder="FULL NAME*" required><br>
+<input type="text" id="phone" name="phone" placeholder="MOBILE NUMBER*"  required><br>
+<input type="email" id="email" name="email" placeholder="COMPANY EMAIL*" required><br>
+<select id="service" name="service" placeholder="WHAT SERVICES DO YOU NEED?*" required>
+<option value="select">REQUEST FOR SERVICES?</option>
+<option value="web design">Web Design</option>
+<option value="Asset Managing">Asset Managing</option>
+<option value="Web & Mobile Application Development">Web & Mobile Application Development</option>
+<option value="digital marketing">Digital Marketing</option>
+</select><br>
+<input type="submit"  style="background-color: lightgreen;" value="Register" >
+</form>
+  </article>
+  <h1 style="padding-left:100px;">Let’s Get Started</h1>
+  <p>We offer full-cycle technology solutions</p>
+  <p>that streamline your digital</p>
+  <p>transformation journey. With cutting-</p>
+  <p>edge technical expertise, APOTHEXIS simplifies</p>
+  <p>complex business challenges with</p>
+  <p>innovative solutions for 100+ fastest-</p>
+  <p>growing enterprises.</p>
+  </section >
+
+<footer class="footer">
+  <div class="ft-copy">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+               <p> Copyright 2023 APOTHEXIS. All rights reserved.
+                  </p>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+                    {% endblock %}       
+</body>
+</html>
